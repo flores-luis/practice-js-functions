@@ -28,6 +28,31 @@
     -- Area of rectangle that is 5 wide and 22 tall: 110
     -- Volume of a rectangular prism that is 4.5 x 12.5 x 17.4: 978.7499999999999
     -- Area of a circle that with a radius of 7.2: 162.8601631620949
-    -- Volume of a spehere with a radius of 7.2: 1563.4575663561109
+    -- Volume of a sphere with a radius of 7.2: 1563.4575663561109
 
 */
+
+function rectangleAreaCalculator (width,height) {
+    let areaRectangle = width * height;
+    return areaRectangle;
+};
+
+function rectanglePrismCalculator (width,height,length){
+    let volumePrism = width * height * length;
+    return volumePrism;
+};
+
+function circleAreaCalculator (radius){
+    let areaCircle = Math.PI * Math.pow(radius,2);
+    return areaCircle;
+};
+
+function sphereVolumeCalculator (radius){
+    let volumeSphere = 4/3 * Math.PI * Math.pow(radius,3);
+    return volumeSphere;
+};
+
+console.log(rectangleAreaCalculator(5,22));
+console.log(rectanglePrismCalculator(4.5,12.5,17.4));
+console.log(circleAreaCalculator(7.2));
+console.log(sphereVolumeCalculator(7.2));
