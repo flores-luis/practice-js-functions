@@ -56,3 +56,13 @@ console.log(rectangleAreaCalculator(5,22));
 console.log(rectanglePrismCalculator(4.5,12.5,17.4));
 console.log(circleAreaCalculator(7.2));
 console.log(sphereVolumeCalculator(7.2));
+
+
+// Creating functions using arrow syntax
+
+//rewrite this using arrow syntax:
+
+const getArea = (width, length, unit) => {
+  const area = width * length;
+  return `${area} ${unit}`;
+};
